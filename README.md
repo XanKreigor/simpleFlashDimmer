@@ -1,6 +1,6 @@
-Flash Light dimming utilty for Redmi Note 12 Pro Plus
+Flash Light dimming utilty for Xiaomi 14T Pro
 
-**Requires Root**
+**Requires Root for precise control**
 
 Features:
 - Dark Mode
@@ -9,8 +9,8 @@ Features:
 
 Mostly ChatGPT'd together in a few minutes but it does what it's supposed to do
 
-Note that it has only been tested only Redmi Note 12 Pro Plus but might work on other devices. It just does `echo BRIGHTNESS_VALUE > /sys/class/leds/torch-light0/brightness`, cou can change the file path to whatever you want in the MainActivity to potentially support other devices.
+Note that it has not been tested but might work on other devices. It just does `echo BRIGHTNESS_VALUE > /sys/class/flashlight_core/flashlight/flashlightbrightness`, cou can change the file path to whatever you want in the MainActivity to potentially support other devices.
 
 Add your own devices:
 
-In the Cis utilty you can dim the flashlight, then just connect you PC and run `adb logcat | grep CitUtils` to find the filepath
+In the Cis utilty you can dim the flashlight, then just connect you PC and run `adb logcat | grep flash` to find the filepath
