@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         confirmMaxButton = findViewById(R.id.confirmMaxButton)
 
         // Set default max value of SeekBar
-        seekBar.max = 16
+        seekBar.max = 100
 
         // Request root permission when the app is launched
         requestRootPermission()
@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun writeBrightnessValue(value: Int) {
         if (Shell.rootAccess()) {
-            val command = "echo $value > /sys/class/leds/torch-light0/brightness"
+            val command = "echo $value > /sys/class/flashlight_core/flashlight/torchbrightness"
             Shell.cmd(command).exec()
         } else {
             runOnUiThread {
