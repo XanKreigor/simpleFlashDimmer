@@ -5,7 +5,7 @@ Flash Light dimming utilty for Xiaomi 14T Pro Note:device already supports but r
 Features:
 - Dark Mode
 - Mostly Works
-- Dimms your flashlight
+- Precisely dimms your flashlight
 
 Mostly ChatGPT'd together in a few minutes but it does what it's supposed to do
 
