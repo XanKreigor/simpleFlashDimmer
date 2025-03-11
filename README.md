@@ -1,4 +1,4 @@
-Flash Light dimming utilty for Xiaomi 14T Pro
+Flash Light dimming utilty for Xiaomi 14T Pro Note:device already supports but root required for precise control
 
 **Requires Root for precise control**
 
